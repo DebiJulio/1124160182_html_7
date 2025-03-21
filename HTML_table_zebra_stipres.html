@@ -9,13 +9,22 @@
     <h1>HTML table-zebra stipres</h1>
     <head>
         <style>
-        {
+         table{
+            border-collapse: collapse;
+            width: 100%;
+
+            }
+        th,td{
             text-align: left;
             padding: 8px;
+            border: 1px solid burlywood;
         }
-
+        th{
+            background-color: aquamarine;
+            color: rgb(0, 0, 0);
+        }
         tr:nth-child(even) {
-                background-color: aqua;
+                background-color: rgb(75, 131, 131);
         }
         </style>
     </head>
@@ -25,9 +34,11 @@
     <p>untuk table bergaris zebra, gunakan pemilihan  nth-child()</p>
     <table>
         <tr>
+            <p>
             <th>frist name</th>
             <th>last name</th>
             <th>points</th>
+            </p>
         </tr>
         <tr>
             <td>alfan</td>
